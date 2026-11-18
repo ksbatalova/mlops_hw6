@@ -114,6 +114,7 @@ cd mlops_realtime_fraud_detector_monitoring
 cp .env.example .env
 ```
 
+Нужно открыть `.env` файл 
 В `TRAIN_DATA_CSV` укажите путь к размеченному `train.csv` на вашей машине.
 
 ### 3. Запустите контейнеры
