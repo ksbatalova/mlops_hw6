@@ -1,0 +1,13 @@
+apiVersion: 1
+datasources:
+  - name: PostgreSQL
+    type: grafana-postgresql-datasource
+    uid: pg-fraud
+    access: proxy
+    url: postgres:5432
+    user: fraud_user
+    secureJsonData:
+      password: "<ПАРОЛЬ ИЗ docker-compose.yaml>"
+    jsonData:
+      database: fraud_db
+      sslmode: disable
